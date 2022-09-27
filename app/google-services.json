@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461759917831",
+    "project_id": "take-attendance-with-notes",
+    "storage_bucket": "take-attendance-with-notes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461759917831:android:f9f43f82be6c052dccdfa2",
+        "android_client_info": {
+          "package_name": "com.example.takeattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461759917831-p0qk8c21qnqnv3bnqv1s5jg5sbr0cnii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1yEtz4CaXF16S4tsa7nCxSC_uALuD_mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461759917831-p0qk8c21qnqnv3bnqv1s5jg5sbr0cnii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

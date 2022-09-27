@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.takeattendance"
+        minSdk 23
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.google.android.material:material:1.6.1'
+
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-firestore'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0-alpha1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.0'
+
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+//    implementation 'com.todkars:shimmer-recyclerview:0.4.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+}
